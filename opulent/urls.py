@@ -22,10 +22,11 @@ from opulent import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('1/', index1, name='complete-step'),
-    path('2/', index2, name='complete-step'),
-    path('3/', index3, name='complete-step'),
-    path('4/', index4, name='complete-step'),
-    path('5/', index5, name='complete-step'),
-    path('6/', index6, name='complete-step'),
+    path('', index, name='0'),
+    path('1/', index1, name='1'),
+    path('2/', index2, name='2'),
+    path('3/', index3, name='3'),
+    path('4/', index4, name='4'),
+    path('5/', index5, name='5'),
+    path('6/', index6, name='6'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
