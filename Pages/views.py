@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 def index0(request, *args, **kwargs):
-    return render(request, "index.html", {})
+    return render(request, "runok/index-3.html", {})
 
 def index1(request, *args, **kwargs):
     return render(request, "runok/index.html", {})
