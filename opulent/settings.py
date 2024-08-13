@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-p-scg23h@6$pdf4_^16&d*x*2njb@)h=yv6e(7z#6x@y$0q$ij
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["opulent.tn", "www.opulent.tn"]
+ALLOWED_HOSTS = ["opulent.tn", "www.opulent.tn", "127.0.0.1"]
 
 
 # Application definition
@@ -71,7 +71,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'opulent.wsgi.application'
 
-LOGGING = {
+""" LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'handlers': {
@@ -88,7 +88,7 @@ LOGGING = {
             'propagate': True,
         },
     },
-}
+} """
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
