@@ -231,7 +231,7 @@
 
         <section class="hero-section-3">
             <div class="hero-round-img">
-                <img src="{% static 'assets/img/images/hero-img-5.png' %}" alt="img">
+                <img src="{% static 'assets/img/images/hero.webp' %}" alt="img">
             </div>
             <div class="shapes">
                 <div class="round-shape"></div>
@@ -247,7 +247,9 @@
                     <h1 class="title mb-0 anim-text">Turned</h1>
                     <div style="display: flex;justify-content: flex-start;align-items: center;">
                         <h1 class="title anim-text"><br>Int</h1>
-                        <div style="width:120px;height:120px;"><img style="width: 120px;height: 120px;" src="{% static 'assets/img/favicon.png' %}" alt="opulent web dev agency"></div>
+                        <div style="width: 120px;height: 144px;display: flex;justify-content: center;padding-top: .6rem;">
+                            <img style="width: 110px;height: 110px;" src="{% static 'assets/img/favicon.png' %}" alt="opulent web dev agency">
+                        </div>
                         <h1 class="title anim-text"><br>Reality</h1>
                     </div>
                     <p>With every single one of our clients, we bring forth a deep passion for creative
@@ -267,34 +269,30 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="sponsor-item text-center">
-                                <a href="#"><img src="{% static 'assets/img/sponsor/sponsor-img-1.png' %}" alt="sponsor"></a>
+                                <a href="#"><img src="{% static 'assets\img\logo\gamezone.png' %}" alt="GameZone tunisian"></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="sponsor-item text-center">
-                                <a href="#"><img src="{% static 'assets/img/sponsor/sponsor-img-2.png' %}" alt="sponsor"></a>
+                                <a href="#"><img src="{% static 'assets\img\logo\ttg.png' %}" alt="Tunisian Top Gs"></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="sponsor-item text-center">
-                                <a href="#"><img src="{% static 'assets/img/sponsor/sponsor-img-3.png' %}" alt="sponsor"></a>
+                                <a href="#"><img src="{% static 'assets\img\logo\GandS.webp' %}" alt="G and S agency"></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="sponsor-item text-center">
-                                <a href="#"><img src="{% static 'assets/img/sponsor/sponsor-img-4.png' %}" alt="sponsor"></a>
+                                <a href="#"><img src="{% static 'assets\img\logo\tokyostore.ico' %}" alt="tokyostore tunisia"></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="sponsor-item text-center">
-                                <a href="#"><img src="{% static 'assets/img/sponsor/sponsor-img-5.png' %}" alt="sponsor"></a>
+                                <a href="#"><img src="{% static 'assets\img\logo\snapstore.png' %}" alt="snapstore tunisia"></a>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="sponsor-item text-center">
-                                <a href="#"><img src="{% static 'assets/img/sponsor/sponsor-img-6.png' %}" alt="sponsor"></a>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -308,10 +306,10 @@
                     <div class="col-lg-6 col-md-12">
                         <div class="about-img-wrap-4">
                             <div class="about-img img-1 reveal">
-                                <img src="{% static 'assets/img/images/about-img-6.png' %}" alt="img">
+                                <img src="{% static 'assets\img\project\ttg_landing.webp' %}" alt="img">
                             </div>
                             <div class="about-img img-2 reveal">
-                                <img src="{% static 'assets/img/images/about-img-7.png' %}" alt="img">
+                                <img src="{% static 'assets\img\project\gamezone_home.webp' %}" alt="img">
                             </div>
                         </div>
                     </div>
@@ -326,14 +324,14 @@
                                 <div class="about-counter">
                                     <div class="icon"><img src="{% static 'assets/img/icon/about-3.png' %}" alt="icon"></div>
                                     <div class="content">
-                                        <h3 class="title"><span class="odometer" data-count="25">0</span>+</h3>
+                                        <h3 class="title"><span class="odometer" data-count="4">0</span>+</h3>
                                         <p>Years on the market</p>
                                     </div>
                                 </div>
                                 <div class="about-counter">
                                     <div class="icon"><img src="{% static 'assets/img/icon/about-4.png' %}" alt="icon"></div>
                                     <div class="content">
-                                        <h3 class="title"><span class="odometer" data-count="375">0</span>+</h3>
+                                        <h3 class="title"><span class="odometer" data-count="7">0</span>+</h3>
                                         <p>Projects delivered so far</p>
                                     </div>
                                 </div>
@@ -346,15 +344,15 @@
         </section>
         <!-- ./ about-section -->
 
-        <section class="service-section-3 pb-130 fade-wrapper">
+        <section class="service-section-3 pb-130 fade-wrapper" style="height:500px">
             <div class="container">
                 <div class="row gy-lg-0 gy-4">
                     <div class="col-lg-4 col-md-12">
                         <div class="service-left sticky-widget">
                             <div class="section-heading heading-3">
                                 <h4 class="sub-heading after-none" data-text-animation="fade-in" data-duration="1.5">Service We Offer</h4>
-                                <h2 class="section-title" data-text-animation data-split="word" data-duration="1">We’ve amazing web solutions</h2>
-                                <a href="service.html" class="rr-primary-btn">More Services <i class="fa-sharp fa-regular fa-arrow-right"></i></a>
+                                <h2 class="section-title" data-text-animation data-split="word" data-duration="1">We have THE BEST web solutions</h2>
+                                {% comment %} <a href="service.html" class="rr-primary-btn">More Services <i class="fa-sharp fa-regular fa-arrow-right"></i></a> {% endcomment %}
                             </div>
                         </div>
                     </div>
@@ -368,7 +366,7 @@
                                     </svg>
                                 </div>
                                 <h3 class="title"><a href="service-details.html">Web Development</a></h3>
-                                <div class="service-img"><img src="{% static 'assets/img/service/service-img-1.png' %}" alt="service"></div>
+                                <div class="service-img"><img src="{% static 'assets\img\service\web.webp' %}" alt="service"></div>
                             </div>
                             <div class="service-box">
                                 <span class="number">02</span>
@@ -384,10 +382,10 @@
                                         <path d="M49.6912 53.5635C49.4051 53.5635 49.121 53.449 48.9132 53.2222L46.3059 50.3943C46.0133 50.0785 45.9412 49.6164 46.1236 49.2284C46.645 48.1092 47.0245 46.9517 47.2492 45.7879C47.3319 45.364 47.6604 45.0333 48.0844 44.9485L51.7665 44.2108V41.7094L48.0844 40.9717C47.6626 40.8869 47.334 40.5562 47.2492 40.1322C47.0266 38.9684 46.645 37.811 46.1236 36.6896C45.9412 36.2996 46.0133 35.8396 46.3059 35.5237L48.8581 32.7552L47.3891 30.7308L43.9656 32.3058C43.5734 32.4839 43.1134 32.4139 42.7997 32.1193C41.8945 31.2756 40.9109 30.5548 39.8743 29.9804C39.4991 29.7726 39.2871 29.3571 39.3359 28.931L39.7747 25.2023L37.3941 24.4285L35.552 27.71C35.34 28.0852 34.9139 28.2887 34.4984 28.2421C33.3092 28.0958 32.0691 28.0958 30.8799 28.2421C30.458 28.2972 30.0383 28.0852 29.8242 27.71L27.9842 24.4285L25.6036 25.2023L26.0424 28.931C26.0912 29.3571 25.8792 29.7726 25.504 29.9804C24.4674 30.5548 23.4838 31.2756 22.5786 32.1193C22.267 32.4139 21.8049 32.4839 21.4127 32.3058L17.9892 30.7308L16.5201 32.7573L19.0724 35.5258C19.3649 35.8417 19.437 36.3038 19.2547 36.6917C18.7332 37.811 18.3538 38.9684 18.1291 40.1322C18.0464 40.5562 17.7178 40.8869 17.2939 40.9717L13.6096 41.7094V44.2108L17.2917 44.9485C17.7136 45.0333 18.0422 45.364 18.127 45.7879C18.2563 46.4514 18.4365 47.1298 18.6718 47.7997C18.8625 48.3529 18.57 48.955 18.0167 49.1479C17.4635 49.3408 16.8614 49.0482 16.6664 48.495C16.482 47.965 16.3251 47.4266 16.1958 46.8924L12.3419 46.1186C11.8459 46.019 11.4898 45.5844 11.4898 45.0799V40.8403C11.4898 40.3357 11.8459 39.9012 12.3419 39.8015L16.1958 39.0299C16.4057 38.1608 16.6855 37.298 17.0395 36.4522L14.3685 33.5565C14.0251 33.1855 13.9912 32.6238 14.2901 32.2147L16.783 28.7827C17.0819 28.3757 17.6224 28.2294 18.0824 28.4435L21.6628 30.0906C22.356 29.4928 23.0895 28.9565 23.8505 28.488L23.3905 24.5854C23.3333 24.0851 23.6364 23.6103 24.1176 23.4534L28.1495 22.1412C28.6244 21.9865 29.1543 22.1879 29.4023 22.6309L31.325 26.0608C32.2238 25.9824 33.1417 25.9824 34.0405 26.0608L35.9653 22.6309C36.2112 22.19 36.7433 21.9865 37.216 22.1412L41.2479 23.4513C41.7291 23.6082 42.0323 24.0809 41.975 24.5833L41.515 28.488C42.2761 28.9565 43.0095 29.4928 43.7027 30.0906L47.2831 28.4435C47.7431 28.2294 48.2879 28.3757 48.5826 28.7827L51.0755 32.2125C51.3744 32.6217 51.3405 33.1834 50.997 33.5544L48.3261 36.4501C48.6801 37.2938 48.962 38.1587 49.1698 39.0278L53.0236 39.7994C53.5302 39.9012 53.8864 40.3357 53.8864 40.8403V45.0799C53.8864 45.5844 53.5302 46.019 53.0342 46.1186L49.1804 46.8903C48.9705 47.7594 48.6907 48.6222 48.3367 49.468L50.4734 51.7849C50.872 52.2153 50.8444 52.8851 50.4141 53.2837C50.2085 53.4702 49.9498 53.5635 49.6912 53.5635ZM32.6881 53.5592C32.103 53.5592 31.6282 53.0844 31.6282 52.4993C31.6282 51.9142 32.103 51.4394 32.6881 51.4394C37.3644 51.4394 41.1674 47.6364 41.1674 42.9601C41.1674 38.2837 37.3644 34.4808 32.6881 34.4808C28.0117 34.4808 24.2088 38.2837 24.2088 42.9601C24.2088 44.6687 24.7133 46.3158 25.6693 47.7212C25.9979 48.2045 25.8749 48.8638 25.3895 49.1945C24.9104 49.5231 24.2512 49.4022 23.9183 48.9147C22.7228 47.1552 22.0889 45.0969 22.0889 42.9601C22.0889 37.1157 26.8437 32.3609 32.6881 32.3609C38.5324 32.3609 43.2872 37.1157 43.2872 42.9601C43.2872 48.8045 38.5324 53.5592 32.6881 53.5592Z" fill="currentColor"/>
                                     </svg>
                                 </div>
-                                <h3 class="title"><a href="service-details.html">Mobile Application</a></h3>
-                                <div class="service-img"><img src="{% static 'assets/img/service/service-img-2.png' %}" alt="service"></div>
+                                <h3 class="title"><a href="service-details.html">SEO Optimization</a></h3>
+                                <div class="service-img"><img src="{% static 'assets\img\service\SEO.webp' %}" alt="service"></div>
                             </div>
-                            <div class="service-box">
+                            {% comment %} <div class="service-box">
                                 <span class="number">03</span>
                                 <div class="icon">
                                     <svg width="61" height="61" viewBox="0 0 61 61" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -417,7 +415,7 @@
                                 </div>
                                 <h3 class="title"><a href="service-details.html">App Development</a></h3>
                                 <div class="service-img"><img src="{% static 'assets/img/service/service-img-4.png' %}" alt="service"></div>
-                            </div>
+                            </div> {% endcomment %}
                         </div>
                     </div>
                 </div>
@@ -429,10 +427,10 @@
             <div class="container">
                 <div class="section-heading heading-3 text-center">
                     <h4 class="sub-heading" data-text-animation="fade-in" data-duration="1.5">Our Work Process</h4>
-                    <h2 class="section-title" data-text-animation data-split="word" data-duration="1">Follow 4 Easy Work Steps</h2>
+                    <h2 class="section-title" data-text-animation data-split="word" data-duration="1">2 Super Easy Work Steps</h2>
                 </div>
-                <div class="row gy-lg-0 gy-4 fade-wrapper">
-                    <div class="col-lg-3 col-md-6">
+                <div class="row gy-lg-0 gy-4 fade-wrapper" style="justify-content: center">
+                    {% comment %} <div class="col-lg-3 col-md-6">
                         <div class="process-item-wrap fade-top">
                             <div class="process-item-2 text-center">
                                 <div class="icon">
@@ -457,7 +455,7 @@
                                 <span>Process-1</span>
                                 <h3 class="title">Project Research</h3>
                                 <div class="process-bottom">
-                                    <p>This includes the use of robots & computer solution</p>
+                                    <p>This includes the use of AI & computer solution</p>
                                 </div>
                             </div>
                         </div>
@@ -482,7 +480,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> {% endcomment %}
                     <div class="col-lg-3 col-md-6">
                         <div class="process-item-wrap fade-top">
                             <div class="process-item-2 text-center">
@@ -491,11 +489,11 @@
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M27.9969 31.6791C28.1157 31.955 28.378 32.142 28.6776 32.1643C28.6978 32.1658 28.7177 32.1665 28.7378 32.1665C29.0152 32.1665 29.2751 32.0235 29.4229 31.7853L31.3769 28.6365L35.0073 29.3799C35.302 29.44 35.6051 29.3319 35.7947 29.0989C35.9844 28.8659 36.0287 28.5468 35.91 28.2708L33.2138 22.0109C33.2962 21.9759 33.3806 21.9399 33.4695 21.9019C34.8599 21.3066 35.6734 19.8974 35.4939 18.3957C35.4605 18.1167 35.4294 17.8685 35.4015 17.6457C35.2895 16.752 35.2331 16.3034 35.2936 15.9607C35.3541 15.6179 35.5604 15.2156 35.9714 14.4141C36.0739 14.2142 36.188 13.9918 36.3147 13.7409C36.9971 12.3911 36.7145 10.7887 35.6117 9.75379C35.4069 9.56154 35.2234 9.39147 35.0589 9.23865C34.3985 8.62612 34.067 8.31865 33.8932 8.01723C33.7191 7.71581 33.6185 7.27506 33.4182 6.397C33.3682 6.17804 33.3126 5.93408 33.2485 5.66048C32.9035 4.18785 31.6571 3.14204 30.1469 3.05806C29.8665 3.04244 29.6167 3.03004 29.3924 3.01885C28.4927 2.97409 28.0412 2.95161 27.7142 2.83255C27.3872 2.7135 27.0269 2.4405 26.3089 1.89653C26.1299 1.76084 25.9304 1.60982 25.7056 1.44147C24.4947 0.535185 22.8678 0.535084 21.6569 1.44147C21.4321 1.60982 21.2326 1.76084 21.0536 1.89653C20.3357 2.4405 19.9754 2.7135 19.6483 2.83255C19.3213 2.95161 18.8697 2.97409 17.9702 3.01885C17.7458 3.03004 17.496 3.04244 17.2156 3.05806C15.7055 3.14204 14.4589 4.18795 14.1141 5.66048C14.0499 5.93408 13.9943 6.17794 13.9443 6.397C13.744 7.27506 13.6435 7.71591 13.4694 8.01723C13.2954 8.31865 12.9639 8.62612 12.3036 9.23865C12.139 9.39147 11.9556 9.56154 11.7509 9.75379C10.6481 10.7888 10.3654 12.3912 11.0477 13.741C11.1744 13.9917 11.2885 14.2141 11.391 14.4139C11.802 15.2155 12.0083 15.6178 12.0688 15.9606C12.1293 16.3032 12.073 16.7518 11.961 17.6454C11.933 17.8683 11.9019 18.1166 11.8685 18.3957C11.6891 19.8974 12.5025 21.3066 13.8929 21.9019C14.1512 22.0125 14.3816 22.1097 14.5886 22.1969C14.6515 22.2234 14.7112 22.2486 14.7694 22.2732L11.4621 29.3767C11.3353 29.6491 11.3705 29.9693 11.5532 30.2078C11.7359 30.4462 12.0361 30.5637 12.3321 30.5115L15.9828 29.8737L17.8446 33.0778C17.9895 33.3269 18.2555 33.479 18.5419 33.479C18.5539 33.479 18.5662 33.4787 18.5784 33.4782C18.8787 33.4646 19.1463 33.2852 19.2731 33.013L22.5645 25.9432C23.0925 25.7845 23.4126 25.7046 23.6815 25.7046C24.0295 25.7046 24.4615 25.8379 25.3223 26.1035C25.4219 26.1343 25.5273 26.1668 25.6379 26.2007L27.9969 31.6791ZM31.1498 26.9435C30.8189 26.8758 30.4808 27.0214 30.3027 27.3083L28.8671 29.6219L27.4964 26.4394C28.4372 26.3089 29.2982 25.7817 29.8486 24.94C30.0024 24.7048 30.1381 24.4947 30.2599 24.306C30.7486 23.5493 30.9937 23.1695 31.2604 22.9457C31.3801 22.8453 31.5304 22.7546 31.7342 22.6535L33.8171 27.4897L31.1498 26.9435ZM18.4623 30.9314L17.0944 28.5773C16.9247 28.2852 16.591 28.1301 16.2583 28.1881L13.5761 28.6566L16.195 23.0318C16.429 23.2643 16.6707 23.6383 17.1019 24.3061C17.2238 24.4948 17.3594 24.7049 17.5132 24.94C18.1937 25.9806 19.3482 26.5412 20.5418 26.4648L18.4623 30.9314ZM23.6809 24.0908C23.132 24.0908 22.583 24.248 21.5644 24.5623C21.3524 24.6277 21.1165 24.7005 20.851 24.7808C20.0831 25.0126 19.3025 24.729 18.863 24.0572C18.7111 23.825 18.5771 23.6174 18.4569 23.4311C17.3003 21.6401 17.1791 21.5385 15.2144 20.7106C15.0101 20.6245 14.7824 20.5285 14.5274 20.4192C13.7896 20.1032 13.3743 19.384 13.4696 18.587C13.5025 18.3115 13.5333 18.0662 13.5609 17.8461C13.8261 15.7309 13.7986 15.5751 12.8257 13.6778C12.7245 13.4804 12.6119 13.2608 12.4868 13.0133C12.1247 12.2969 12.2689 11.4792 12.8542 10.9298C13.0566 10.74 13.2376 10.5721 13.4002 10.4212C14.9633 8.9712 15.0423 8.8342 15.5165 6.75579C15.5658 6.53945 15.6208 6.29861 15.6841 6.02834C15.8671 5.24686 16.5033 4.71307 17.3047 4.66851C17.5817 4.65309 17.8284 4.64079 18.05 4.6298C20.1793 4.52375 20.3281 4.46961 22.0274 3.18216C22.2042 3.04819 22.4011 2.89899 22.6232 2.73275C23.2658 2.25178 24.0961 2.25178 24.7388 2.73275C24.9608 2.89899 25.1577 3.04819 25.3346 3.18216C27.0338 4.46961 27.1826 4.52375 29.3119 4.6298C29.5334 4.64079 29.7802 4.65309 30.0572 4.66851C30.8587 4.71307 31.4948 5.24686 31.6778 6.02834C31.7412 6.29851 31.7961 6.53935 31.8454 6.75569C32.3196 8.8341 32.3986 8.9712 33.9617 10.4211C34.1243 10.572 34.3054 10.7399 34.5077 10.9297C35.093 11.4791 35.2371 12.2968 34.875 13.0132C34.7499 13.2608 34.6372 13.4806 34.5359 13.678C33.5632 15.5751 33.5357 15.7309 33.801 17.8463C33.8285 18.0664 33.8594 18.3115 33.8922 18.5869C33.9875 19.3839 33.5723 20.1032 32.8344 20.4191C32.5794 20.5283 32.3518 20.6243 32.1474 20.7105C30.1828 21.5384 30.0617 21.6401 28.9051 23.431C28.7848 23.6174 28.6508 23.8249 28.4989 24.0572C28.0597 24.7289 27.2796 25.013 26.5109 24.7808C26.2454 24.7005 26.0094 24.6276 25.7975 24.5623C24.7787 24.248 24.2297 24.0908 23.6809 24.0908ZM31.6849 13.6164C31.6849 9.20296 28.0943 5.6124 23.6809 5.6124C19.2675 5.6124 15.6769 9.20296 15.6769 13.6164C15.6769 18.0299 19.2675 21.6206 23.6809 21.6206C28.0942 21.6206 31.6849 18.03 31.6849 13.6164ZM23.6808 20.0076C20.1567 20.0076 17.2898 17.1406 17.2898 13.6164C17.2898 10.0924 20.1567 7.22536 23.6808 7.22536C27.2048 7.22536 30.0718 10.0924 30.0718 13.6164C30.0719 17.1406 27.2048 20.0076 23.6808 20.0076ZM28.1102 11.7149L22.603 16.7127C22.449 16.8525 22.2549 16.922 22.0611 16.922C21.8543 16.922 21.6478 16.8429 21.4908 16.6858L19.2233 14.4184C18.9084 14.1035 18.9084 13.5928 19.2233 13.2779C19.5384 12.963 20.0489 12.963 20.3639 13.2779L22.0881 15.0021L27.0263 10.5206C27.356 10.2213 27.8661 10.2459 28.1654 10.5758C28.4647 10.9054 28.44 11.4155 28.1102 11.7149ZM43.4207 38.1389C44.4838 37.076 45.0236 35.7351 44.982 34.2612L44.5892 20.3964C44.5505 19.0273 43.1894 17.8006 41.7217 17.8006C41.7076 17.8006 41.6936 17.8007 41.6795 17.8009C40.9635 17.8124 38.6288 18.1981 38.6458 22.6794L38.6745 30.2108C38.6752 30.383 38.6643 30.5503 38.6419 30.7133C38.5851 30.6453 38.5242 30.5789 38.4593 30.514C37.4639 29.5187 35.8337 29.5061 34.748 30.4852C34.721 30.5095 34.6956 30.5356 34.6722 30.5634C33.4573 31.9997 31.9646 33.2578 30.7651 34.2686C30.3444 34.6232 29.9472 34.958 29.621 35.2519C28.2531 36.4849 28.0705 38.1836 28.0724 39.6827L28.0788 45.0464L27.3833 45.0404C26.9124 45.0361 26.4687 45.2164 26.132 45.5473C25.7953 45.8783 25.6075 46.3196 25.6035 46.7899L25.5855 48.888C25.5814 49.3582 25.7615 49.8027 26.0924 50.1394C26.4233 50.4761 26.8647 50.6637 27.3349 50.6678L38.2341 50.7614C38.2393 50.7614 38.2444 50.7615 38.2496 50.7615C38.7141 50.7615 39.1525 50.5818 39.4855 50.2544C39.8222 49.9235 40.0098 49.4822 40.0139 49.012L40.0319 46.9139C40.0359 46.4436 39.8559 45.9991 39.5249 45.6624C39.1941 45.3257 38.7527 45.1381 38.2824 45.1341L37.3857 45.1264V44.1739L43.4207 38.1389ZM38.4189 46.9001L38.4009 48.9981C38.4005 49.0488 38.3756 49.0838 38.3547 49.1043C38.3339 49.1249 38.3015 49.1489 38.2479 49.1487L27.3486 49.055C27.2981 49.0546 27.2631 49.0297 27.2426 49.0088C27.2221 48.988 27.1978 48.9526 27.1983 48.902L27.2164 46.8039C27.2168 46.7533 27.2417 46.7182 27.2626 46.6978C27.2831 46.6775 27.3182 46.6534 27.3679 46.6534H27.3694L38.2686 46.747C38.3509 46.7479 38.4197 46.8178 38.4189 46.9001ZM29.6918 45.0604L29.6853 39.6808C29.6833 38.0381 29.9776 37.1022 30.701 36.4502C31.0072 36.1742 31.3766 35.8628 31.8045 35.5023C33.0376 34.4629 34.5694 33.172 35.8639 31.6521C36.3166 31.2724 36.9347 31.2706 37.3187 31.6546C37.7274 32.0632 37.7279 32.5493 37.3221 33.0995C36.6809 33.8203 36.0066 34.4733 35.2932 35.1636C34.9508 35.4951 34.5965 35.8379 34.2392 36.1952C33.9243 36.5102 33.9243 37.0208 34.2393 37.3357C34.3968 37.4932 34.6031 37.5719 34.8095 37.5719C35.016 37.5719 35.2224 37.4932 35.3798 37.3356C35.7277 36.9877 36.077 36.6496 36.4149 36.3227C37.1603 35.6014 37.8643 34.9201 38.5539 34.142C38.5575 34.1379 39.0941 33.4816 39.0941 33.4816C39.9016 32.4874 40.292 31.4155 40.2874 30.2049L40.2587 22.6733C40.2512 20.6772 40.8055 19.4282 41.7053 19.4137C41.7109 19.4136 41.7162 19.4136 41.7217 19.4136C42.3206 19.4136 42.9627 19.9373 42.9769 20.4422L43.3696 34.3069C43.3989 35.3409 43.0323 36.2464 42.2802 36.9984L36.009 43.2696C35.8577 43.4208 35.7728 43.626 35.7728 43.8398V45.1126L29.6918 45.0604ZM27.9922 47.6241C28.1252 47.2895 28.5043 47.1261 28.8389 47.2592C29.1735 47.3921 29.3369 47.7713 29.204 48.1059C29.0709 48.4405 28.6918 48.6039 28.3573 48.4708C28.0226 48.3377 27.8591 47.9587 27.9922 47.6241ZM19.1178 45.5475C18.7811 45.2164 18.3363 45.037 17.8663 45.0406L17.1709 45.0466L17.1774 39.6829C17.1792 38.1837 16.9966 36.485 15.6287 35.2521C15.3027 34.9581 14.9053 34.6234 14.4847 34.2689C13.2853 33.258 11.7925 31.9999 10.5776 30.5636C10.5542 30.5358 10.5289 30.5097 10.5019 30.4854C9.4157 29.5063 7.78549 29.519 6.79059 30.5142C6.72557 30.5791 6.66478 30.6455 6.60793 30.7135C6.58544 30.5505 6.57466 30.3833 6.57536 30.2111L6.6041 22.6795C6.62103 18.1982 4.28637 17.8126 3.57031 17.801C3.5562 17.8008 3.54238 17.8007 3.52817 17.8007C2.06047 17.8007 0.699231 19.0275 0.660621 20.3965L0.267864 34.2614C0.226229 35.7353 0.766068 37.0761 1.82901 38.139L7.86402 44.1741V45.1266L6.96731 45.1343C6.49703 45.1383 6.05569 45.3259 5.72483 45.6626C5.39387 45.9993 5.21382 46.4438 5.21785 46.9141L5.2359 49.0122C5.23993 49.4824 5.42754 49.9237 5.76424 50.2546C6.09722 50.582 6.53554 50.7617 7.00018 50.7617C7.00532 50.7617 7.01056 50.7617 7.0156 50.7616L17.9148 50.668C18.3851 50.6639 18.8264 50.4763 19.1573 50.1396C19.4883 49.8029 19.6683 49.3584 19.6643 48.8882L19.6462 46.7901C19.6423 46.3198 19.4545 45.8785 19.1178 45.5475ZM9.47699 43.8398C9.47699 43.6259 9.392 43.4208 9.24079 43.2696L2.96948 36.9983C2.21743 36.2463 1.85089 35.3409 1.88012 34.3069L2.27288 20.4421C2.2873 19.9326 2.94508 19.405 3.5444 19.4137C4.44423 19.4282 4.99859 20.6772 4.99103 22.6732L4.9623 30.2049C4.95776 31.4155 5.3481 32.4873 6.1571 33.4833L6.67486 34.1172C6.67839 34.1216 6.6923 34.1379 6.69593 34.142C7.38558 34.9201 8.08954 35.6014 8.83493 36.3227C9.17284 36.6497 9.52205 36.9877 9.87005 37.3356C10.0275 37.4931 10.2339 37.5719 10.4403 37.5719C10.6467 37.5719 10.8531 37.4932 11.0105 37.3357C11.3255 37.0208 11.3255 36.5102 11.0106 36.1952C10.6533 35.838 10.2991 35.4951 9.95664 35.1636C9.24321 34.4732 8.56899 33.8203 7.92773 33.0995C7.52207 32.5494 7.52248 32.0633 7.93116 31.6547C8.31535 31.2706 8.93322 31.2724 9.38606 31.6521C10.6805 33.1721 12.2122 34.463 13.4455 35.5024C13.8732 35.863 14.2427 36.1743 14.549 36.4504C15.2723 37.1022 15.5665 38.0382 15.5645 39.681L15.5581 45.0605L9.47709 45.1127L9.47699 43.8398ZM18.0071 49.0089C17.9866 49.0298 17.9515 49.0547 17.901 49.0551L7.00179 49.1488C6.95028 49.1489 6.9157 49.125 6.89493 49.1044C6.87406 49.0839 6.84917 49.049 6.84876 48.9982L6.83072 46.9002C6.83021 46.8496 6.85451 46.8141 6.87497 46.7933C6.89544 46.7726 6.93052 46.7476 6.98103 46.7472L17.8801 46.6535H17.8816C17.9314 46.6535 17.9665 46.6776 17.9871 46.6979C18.008 46.7183 18.0329 46.7534 18.0333 46.804L18.0513 48.9021C18.0518 48.9527 18.0275 48.9881 18.0071 49.0089ZM17.2575 47.6241C17.3906 47.9587 17.2272 48.3377 16.8926 48.4708C16.558 48.6039 16.1789 48.4405 16.0459 48.1059C15.9128 47.7713 16.0762 47.3922 16.4108 47.2592C16.7454 47.1261 17.1245 47.2895 17.2575 47.6241Z" fill="currentColor"/>
                                     </svg>
                                 </div>
-                                <span>Process-3</span>
-                                <h3 class="title">Quality Products</h3>
-                                <div class="process-bottom">
+                                <span>Process-1</span>
+                                <h3 class="title">Hire Us</h3>
+                                {% comment %} <div class="process-bottom">
                                     <p>This includes the use of robots & computer solution</p>
-                                </div>
+                                </div> {% endcomment %}
                             </div>
                         </div>
                     </div>
@@ -507,11 +505,11 @@
                                         <path d="M52.2183 23.6601C49.1008 22.1093 46.2175 20.1266 43.6537 17.7705C44.9725 12.7773 45.9512 7.70055 46.5831 2.57502C46.7745 1.89474 46.4595 1.17392 45.8302 0.852257C45.2282 0.620899 44.5465 0.844847 44.1989 1.38815C39.6665 6.80971 33.4488 6.18711 26.8698 5.53094C20.8992 4.93356 14.7607 4.33863 9.87876 8.44075C9.55563 6.09588 7.58047 4.33089 5.21415 4.27251C2.84784 4.21413 0.788044 5.87956 0.349674 8.20565C-0.0886963 10.5317 1.22361 12.8327 3.44885 13.6396L13.3005 48.9091C13.4814 49.5571 13.9125 50.1065 14.4989 50.4363C15.0852 50.7661 15.7786 50.8492 16.4263 50.6674L17.2207 50.44C17.8661 50.2604 18.4135 49.8313 18.7422 49.2476C19.0709 48.6638 19.1538 47.9733 18.9727 47.3283L15.8518 36.1489C20.4107 30.3087 26.7645 30.9279 33.4912 31.6002C40.2366 32.2727 47.2136 32.9706 52.3432 26.8362L52.3457 26.8332C52.8572 26.1958 53.068 25.3683 52.9236 24.5639C52.8461 24.1674 52.5841 23.8316 52.2183 23.6601ZM2.02311 9.10376C2.02311 7.4056 3.39974 6.02897 5.0979 6.02897C6.79606 6.02897 8.17269 7.4056 8.17269 9.10376C8.17028 9.66441 8.01298 10.2135 7.71815 10.6904C7.60631 10.8325 7.48974 10.9583 7.38001 11.1075C7.36725 11.1332 7.35584 11.1596 7.34583 11.1865C6.49015 12.1187 5.14953 12.4293 3.97114 11.9681C2.79275 11.507 2.01888 10.3691 2.02311 9.10376ZM17.2113 48.3859C17.1101 48.565 16.9412 48.696 16.7425 48.7496L15.948 48.9769C15.535 49.0896 15.1083 48.8479 14.9927 48.4356L5.35267 13.9227C6.15534 13.8815 6.93475 13.6391 7.61923 13.2178L14.0374 36.1866L14.0403 36.1932L17.2807 47.8016C17.3363 47.9978 17.3113 48.2081 17.2113 48.3859ZM50.9937 25.711C46.4617 31.1301 40.2471 30.5093 33.6659 29.8517C27.1122 29.1967 20.3489 28.5212 15.2757 34.0862C13.6231 28.1826 11.9733 22.2777 10.3265 16.3716L9.06605 11.8535C9.11814 11.7787 9.16549 11.7007 9.21337 11.6228C13.7614 5.99726 20.0482 6.61608 26.6952 7.27918C33.0546 7.91399 39.6194 8.57059 44.6949 3.45406C44.0758 8.14004 43.1581 12.7817 41.9473 17.3507C41.7721 17.9655 41.9661 18.6263 42.4458 19.049C45.083 21.4611 48.0329 23.5075 51.2159 25.1329C51.1939 25.3418 51.1172 25.5411 50.9937 25.711Z" fill="currentColor"/>
                                     </svg>
                                 </div>
-                                <span>Process-4</span>
-                                <h3 class="title">Quality Finished</h3>
-                                <div class="process-bottom">
+                                <span>Process-2</span>
+                                <h3 class="title">Work Done</h3>
+                                {% comment %} <div class="process-bottom">
                                     <p>This includes the use of robots & computer solution</p>
-                                </div>
+                                </div> {% endcomment %}
                             </div>
                         </div>
                     </div>
@@ -521,7 +519,7 @@
         <!-- ./ process-section -->
 
         <div class="running-text running-3">
-            <div class="bg-img" data-background="{% static 'assets/img/bg-img/running-bg.jpg' %}"></div>
+            <div class="bg-img"></div>
             <div class="carouselTicker carouselTicker-nav" data-speed="fast">
                 <ul class="text-anim carouselTicker__list scroller__inner inner-3">
                     <li>Latest Projects</li>
@@ -556,16 +554,17 @@
                     <div class="col-lg-8">
                         <div class="project-carousel swiper">
                             <div class="swiper-wrapper">
+                                
                                 <div class="swiper-slide">
                                     <div class="project-box">
                                         <div class="project-thumb">
                                             <div class="shape"></div>
-                                            <img src="{% static 'assets/img/project/project-img-4.png' %}" alt="project">
+                                            <img src="{% static 'assets\img\project\gz.webp' %}" alt="project">
                                         </div>
                                         <a href="project-details.html" class="project-btn"><i class="fa-light fa-arrow-right-long"></i></a>
                                         <div class="project-content">
-                                            <span>Team Members</span>
-                                            <h3 class="title"><a href="project-details.html">Advertisement Design</a></h3>
+                                            <span>Game Zone</span>
+                                            <h3 class="title"><a href="project-details.html">A custom E-com website</a></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -573,16 +572,18 @@
                                     <div class="project-box">
                                         <div class="project-thumb">
                                             <div class="shape"></div>
-                                            <img src="{% static 'assets/img/project/project-img-3.png' %}" alt="project">
+                                            <img src="{% static 'assets\img\project\ttg.webp' %}" alt="project">
                                         </div>
                                         <a href="project-details.html" class="project-btn"><i class="fa-light fa-arrow-right-long"></i></a>
                                         <div class="project-content">
-                                            <span>Team Members</span>
-                                            <h3 class="title"><a href="project-details.html">Web Application Design</a></h3>
+                                            <span>Tunisian Top Gs</span>
+                                            <h3 class="title"><a href="project-details.html">A platform for educating the tunisian youth</a></h3>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                
+                                
+                                {% comment %} <div class="swiper-slide">
                                     <div class="project-box">
                                         <div class="shape"></div>
                                         <div class="project-thumb">
@@ -607,7 +608,7 @@
                                             <h3 class="title"><a href="project-details.html">Advertisement Design</a></h3>
                                         </div>
                                     </div>
-                                </div>
+                                </div> {% endcomment %}
                             </div>
                         </div>
                     </div>
@@ -618,29 +619,29 @@
 
         <section class="counter-section counter-2">
             <div class="container">
-                <div class="row gy-lg-0 gy-4">
+                <div class="row gy-lg-0 gy-4" style:"display: flex;space-around: center;align-items: center;">
                     <div class="col-lg-3 col-md-6">
                         <div class="counter-item">
-                            <h3 class="title"><span class="odometer" data-count="10">0</span></h3>
+                            <h3 class="title"><span class="odometer" data-count="4">0</span></h3>
                             <p>Years of <br>Experience</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    {% comment %} <div class="col-lg-3 col-md-6">
                         <div class="counter-item">
                             <h3 class="title"><span class="odometer" data-count="18">0</span></h3>
                             <p>Sillded <br> Perforamce</p>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
+                    </div> {% endcomment %}
+                    {% comment %} <div class="col-lg-3 col-md-6">
                         <div class="counter-item">
                             <h3 class="title"><span class="odometer" data-count="32">0</span></h3>
                             <p>Visited <br> Conference</p>
                         </div>
-                    </div>
+                    </div> {% endcomment %}
                     <div class="col-lg-3 col-md-6">
                         <div class="counter-item">
-                            <h3 class="title"><span class="odometer" data-count="1">0</span>k</h3>
-                            <p>Years of <br>Experience</p>
+                            <h3 class="title"><span class="odometer" data-count="7">0</span></h3>
+                            <p>Projects <br>Finished</p>
                         </div>
                     </div>
                 </div>
@@ -652,14 +653,15 @@
             <div class="container">
                 <div class="section-heading heading-3 text-center">
                     <h4 class="sub-heading" data-text-animation="fade-in" data-duration="1.5">Team Members</h4>
-                    <h2 class="section-title" data-text-animation data-split="word" data-duration="1">Experience Team Member</h2>
+                    <h2 class="section-title" data-text-animation data-split="word" data-duration="1">Team Members</h2>
                 </div>
-                <div class="row gy-lg-0 gy-5">
+                <div class="row gy-lg-0 gy-5" style:"display: flex;justify-content: center;align-items: center;">
+                    
                     <div class="col-lg-3 col-md-6 fade-top">
                         <div class="team-item team-item-2">
                             <div class="team-thumb">
                                 <div class="gradient-color"></div>
-                                <img src="{% static 'assets/img/team/team-1.png' %}" alt="team">
+                                <img src="{% static 'assets\img\team\muslim.png' %}" alt="team">
                             </div>
                             <ul class="team-social-2">
                                 <li class="facebook">
@@ -676,8 +678,8 @@
                                 </li>
                             </ul>
                             <div class="team-content">
-                                <h3 class="title"><a href="team-details.html">Charlotte Amitina</a></h3>
-                                <span>Ui/Ux Designer</span>
+                                <h3 class="title"><a href="team-details.html">Ahmad Aziz Belkahia</a></h3>
+                                <span>Bac-End Developer</span>
                             </div>
                         </div>
                     </div>
@@ -685,29 +687,45 @@
                         <div class="team-item team-item-2">
                             <div class="team-thumb">
                                 <div class="gradient-color"></div>
-                                <img src="{% static 'assets/img/team/team-2.png' %}" alt="team">
+                                <img src="{% static 'assets\img\team\zend.webp' %}" alt="team">
                             </div>
                             <ul class="team-social-2">
-                                <li class="facebook">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li class="pinterest">
-                                    <a href="#"><i class="fab fa-pinterest"></i></a>
-                                </li>
-                                <li class="twitter">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                </li>
+                                
                                 <li class="instagram">
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.instagram.com/zenddd_yeni/"><i class="fab fa-instagram"></i></a>
                                 </li>
                             </ul>
                             <div class="team-content">
-                                <h3 class="title"><a href="team-details.html">William Edward</a></h3>
-                                <span>Project Manager</span>
+                                <h3 class="title"><a href="team-details.html">Adam Azzouze</a></h3>
+                                <div>
+                                    <span>Ui/Ux Designer</span>
+                                    <span> | </span>
+                                    <span>Front-End Developer</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 fade-top">
+                        <div class="team-item team-item-2">
+                            <div class="team-thumb">
+                                <div class="gradient-color"></div>
+                                <img src="{% static 'assets\img\team\baki.jpg' %}" alt="team">
+                            </div>
+                            <ul class="team-social-2">
+                                
+                                <li class="instagram">
+                                    <a href="https://www.instagram.com/999.chrif/"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                            <div class="team-content">
+                                <h3 class="title"><a href="team-details.html">Ahmad Cherif</a></h3>
+                                <div>
+                                    <span>Graphic Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% comment %} <div class="col-lg-3 col-md-6 fade-top">
                         <div class="team-item team-item-2">
                             <div class="team-thumb">
                                 <div class="gradient-color"></div>
@@ -758,13 +776,13 @@
                                 <span>Web Developer</span>
                             </div>
                         </div>
-                    </div>
+                    </div> {% endcomment %}
                 </div>
             </div>
         </section>
         <!-- ./ team-section -->
 
-        <section class="pricing-section pt-130 pb-130">
+        {% comment %} <section class="pricing-section pt-130 pb-130">
             <div class="container">
                 <div class="section-heading heading-3 text-center">
                     <h4 class="sub-heading" data-text-animation="fade-in" data-duration="1.5">Our Pricing Plans</h4>
@@ -867,7 +885,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> {% endcomment %}
         <!-- ./ pricing-section -->
 
         <section class="appointment-section pb-130">
@@ -875,7 +893,7 @@
                 <div class="row appointment-wrap align-items-center">
                     <div class="col-lg-5">
                         <div class="appointment-img reveal">
-                            <img src="{% static 'assets/img/images/apppoint-img.jpg' %}" alt="img">
+                            <img src="{% static 'assets\img\images\contact.webp' %}" alt="img">
                         </div>
                     </div>
                     <div class="col-lg-7">
@@ -925,11 +943,11 @@
                 <div class="row gy-lg-0 gy-4 testi-wrap justify-content-center">
                     <div class="col-lg-4 col-md-6">
                         <div class="testi-item item-3 text-center fade-top">
-                            <div class="testi-thumb">
-                                <img src="{% static 'assets/img/testi/testi-author-1.png' %}" alt="img">
+                            <div class="testi-thumb" style="overflow: hidden">
+                                <img src="{% static 'assets\img\team\zend.webp' %}" alt="img">
                             </div>
                             <div class="testi-content">
-                                <h3 class="author">Daniel Joseph <span>Writter</span></h3>
+                                <h3 class="author">Adam Azzouze <span>CEO of Tunisian Top Gs</span></h3>
                                 <p>Curabitur accumsan nec aliquam mauris placat primis lacinia egestas congue facilisis ligula leo sociosqu consequat</p>
                             </div>
                         </div>
@@ -937,10 +955,10 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="testi-item item-3 text-center fade-top">
                             <div class="testi-thumb">
-                                <img src="{% static 'assets/img/testi/testi-author-3.png' %}" alt="img">
+                                <img src="{% static 'assets\img\logo\gz.webp' %}" alt="img">
                             </div>
                             <div class="testi-content">
-                                <h3 class="author">Victoria Madison <span>Developer</span></h3>
+                                <h3 class="author">Majdi <span>CEO of Game Zone</span></h3>
                                 <p>Curabitur accumsan nec aliquam mauris placat primis lacinia egestas congue facilisis ligula leo sociosqu consequat</p>
                             </div>
                         </div>
@@ -948,10 +966,10 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="testi-item item-3 mb-0 text-center fade-top">
                             <div class="testi-thumb">
-                                <img src="{% static 'assets/img/testi/testi-author-2.png' %}" alt="img">
+                                <img src="{% static 'assets\img\logo\gs.webp' %}" alt="img">
                             </div>
                             <div class="testi-content">
-                                <h3 class="author">Nicholas Thomas <span>Marketer</span></h3>
+                                <h3 class="author">Pioter szacillo <span>CEO of G&S</span></h3>
                                 <p>Curabitur accumsan nec aliquam mauris placat primis lacinia egestas congue facilisis ligula leo sociosqu consequat</p>
                             </div>
                         </div>
@@ -961,7 +979,7 @@
         </section>
         <!-- ./ testimonial-section -->
 
-        <section class="blog-section-3 pb-130 fade-wrapper">
+        {% comment %} <section class="blog-section-3 pb-130 fade-wrapper">
             <div class="shapes">
                 <div class="shape shape-1"><img src="{% static 'assets/img/shapes/blog-round-shape-1.png' %}" alt="shape"></div>
                 <div class="shape shape-2"><img src="{% static 'assets/img/shapes/blog-round-shape-2.png' %}" alt="shape"></div>
@@ -1025,7 +1043,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> {% endcomment %}
         <!-- ./ blog-section -->
 
         <footer class="footer-section footer-2 footer-3 bg-dark-1 overflow-hidden">
@@ -1037,12 +1055,7 @@
                 </div>
                 <div class="row footer-wrap">
                     <ul class="footer-text-social">
-                        <li><a href="#">facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">twitter</a></li>
-                        <li><a href="#">pinterest</a></li>
-                        <li><a href="#">Discord</a></li>
-                        <li><a href="#">Skype</a></li>
+                        <li><a href="https://instagram.com/opulent.tn">Instagram</a></li>
                     </ul>
                 </div>
             </div>
