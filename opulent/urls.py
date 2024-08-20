@@ -17,13 +17,19 @@ from operator import index
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls.static import static
-from Pages.views import index0, index1, index2 , index3, index4, index5, index6
+from Pages.views import aboutView, contactView, faqView, index0, index1, index2 , index3, index4, index5, index6, notFoundView, projectView, serviceView
 
 from opulent import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index0, name='zero'),
+    path('contact-us/', contactView, name='contact'),
+    path('faq/', faqView, name='faq'),
+    path('about-us/', aboutView, name='about'),
+    path('service/<slug:url_title>', serviceView, name='service'),
+    path('project/<slug:url_title>', projectView, name='project'),
+    path('404/', notFoundView, name='404'),
     path('one/', index1, name='one'),
     path('two/', index2, name='two'),
     path('three/', index3, name='three'),

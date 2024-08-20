@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html class="no-js" lang="en">
     <head>
@@ -210,7 +211,7 @@
     <div id="smooth-wrapper">
         <div id="smooth-content">
 
-        <section class="page-header" data-background="{% static 'assets/img/bg-img/page-header-bg.jpg' %}">
+        <section class="page-header" data-background="{{service.banner.url}}">
             <div class="overlay"></div>
             <div class="shapes">
                 <div class="shape shape-1"><img src="{% static 'assets/img/shapes/page-header-shape-1.png' %}" alt="shape"></div>
@@ -219,8 +220,8 @@
             </div>
             <div class="container">
                 <div class="page-header-content text-center">
-                    <h1 class="title">Content Management System</h1>
-                    <h4 class="sub-title"><a class="home" href="index.html">Home </a><a class="home" href="service.html">Service </a><a class="inner-page" href="service.html">Content Management System</a></h4>
+                    <h1 class="title">{{service.title}}</h1>
+                    <h4 class="sub-title"><a class="home" href="index.html">Home </a><a class="home" href="service.html">Service </a><a class="inner-page" href="service.html">{{service.title}}</a></h4>
                 </div>
             </div>
         </section>
@@ -232,12 +233,12 @@
                     <div class="col-lg-8 col-md-12">
                         <div class="sidebar-content-wrap">
                             <div class="service-details-img">
-                                <img src="{% static 'assets/img/service/service-details-img.jpg' %}" alt="service">
+                                <img src="{{service.example_image.url}}" alt="service">
                             </div>
                             <div class="service-details-content">
-                                <h2 class="title">Content Management System</h2>
-                                <p class="mb-30">A Content Management System (CMS) is a software application that allows users to create, manage, and modify digital content, such as text, images, videos, and documents, on a website without requiring in-depth technical knowledge. CMS platforms streamline the process of website management, enabling users to focus on content creation and organization rather than coding and programming. Here's a deeper look into CMS:</p>
-                                <div class="service-details-items">
+                                <h2 class="title">{{service.title}}</h2>
+                                <p class="mb-30">{{service.description}}</p>
+                                {% comment %} <div class="service-details-items">
                                     <div class="service-details-item">
                                         <div class="icon">
                                             <svg width="50" height="50" viewBox="0 0 50 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -282,10 +283,9 @@
                                             <p>Maintain wireless scerios after sure quality vectors  future</p>
                                         </div>
                                     </div>
-                                </div>
-                                <p class="mb-50">A Content Management System (CMS) comprises various components that work together to enable users to create, manage, and publish digital content on the web without the need for advanced technical skills. These components ensure the smooth functioning of the CMS and provide users with the tools they need to effectively manage their online presence.</p>
-                                <h2 class="title">4 Simple Steps to Process</h2>
-                                <p class="mb-40">The process of managing content using a Content Management System (CMS) involves several key steps to ensure effective content creation, organization, and publication. Here's a typical workflow:</p>
+                                </div> {% endcomment %}
+                                {% comment %} <h2 class="title">4 Simple Steps to Process</h2>
+                                <p class="mb-40">The process of managing content using a Educational Platform (CMS) involves several key steps to ensure effective content creation, organization, and publication. Here's a typical workflow:</p>
                                 <div class="details-box-wrap">
                                     <div class="details-box">
                                         <span class="number">01</span>
@@ -315,22 +315,24 @@
                                             <p>Choose an appropriate category or topic for the content to...</p>
                                         </div>
                                     </div>
-                                </div>
+                                </div> {% endcomment %}
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <div class="service-widget">
-                            <h3 class="widget-title">Categories</h3>
+                            <h3 class="widget-title">Services</h3>
                             <ul class="category-list">
-                                <li class="active"><a href="#"><i class="fa-sharp fa-regular fa-arrow-right"></i> User Experience Design</a></li>
-                                <li><a href="#"><i class="fa-sharp fa-regular fa-arrow-right"></i> E-Commerce Solutions</a></li>
-                                <li><a href="#"><i class="fa-sharp fa-regular fa-arrow-right"></i> Content Management Systems</a></li>
-                                <li><a href="#"><i class="fa-sharp fa-regular fa-arrow-right"></i> Back-End Development</a></li>
-                                <li><a href="#"><i class="fa-sharp fa-regular fa-arrow-right"></i> Search Engine Optimization</a></li>
+                                {% for s in services %}
+                                    <li {% if s.id == service.id %}class="active"{% endif %}>
+                                        <a href="{% url 'service' url_title=s.url_title %}">
+                                            <i class="fa-sharp fa-regular fa-arrow-right"></i> {{ s.title }}
+                                        </a>
+                                    </li>
+                                {% endfor %}
                             </ul>
                         </div>
-                        <div class="service-widget sticky-widget">
+                        {% comment %} <div class="service-widget sticky-widget">
                             <h3 class="widget-title">Download</h3>
                             <div class="download-area">
                                 <div class="download-item">
@@ -360,7 +362,7 @@
                                     <a href="#" class="download-btn"><i class="fa-sharp fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
-                        </div>
+                        </div> {% endcomment %}
                     </div>
                 </div>
             </div>

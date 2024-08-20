@@ -30,6 +30,7 @@ $(function() {
 
 			// Clear the form.
 			$('#contact-form input,#contact-form textarea').val('');
+			$('#lastname').val('');
 		})
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.
